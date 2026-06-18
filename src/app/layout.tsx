@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 import { ThemeProvider } from "@/components/theme-provider";
 import { SiteDock } from "@/components/ui/site-dock";
 import { SiteHeader } from "@/components/ui/site-header";
-import { Analytics } from "@vercel/analytics/react";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   title: "LKR | Built by Developers, For Everyone",
