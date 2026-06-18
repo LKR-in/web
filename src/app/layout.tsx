@@ -59,7 +59,20 @@ export default function RootLayout({
         >
           <SiteHeader />
           <SiteDock />
-          {children}
+          <main className="flex-1 flex flex-col">
+            {children}
+          </main>
+          <footer className="w-full py-8 text-center text-[13px] text-muted-foreground bg-background z-50 relative mt-auto">
+            Project Layout & Design by{" "}
+            <a
+              href="https://github.com/lavjeetrai"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium hover:text-foreground transition-colors"
+            >
+              Lavjeet Kumar Rai (@lavjeetrai)
+            </a>
+          </footer>
           <Analytics />
         </ThemeProvider>
       </body>
