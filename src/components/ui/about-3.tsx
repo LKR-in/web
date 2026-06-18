@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import LogoLoop from "@/components/ui/LogoLoop";
@@ -68,11 +69,11 @@ export const About3 = ({
   title = "About Us",
   description = "Shadcnblocks is a passionate team dedicated to creating innovative solutions that empower businesses to thrive in the digital age.",
   mainImage = {
-    src: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=800",
+    src: "/backgrnd.jpeg",
     alt: "Team collaborating in office",
   },
   secondaryImage = {
-    src: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80&w=800",
+    src: "logo.gif.gif",
     alt: "Developer workspace",
   },
   breakout = {

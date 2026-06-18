@@ -10,8 +10,8 @@ export function SiteDock() {
   const dockItems = [
     { icon: <HomeIcon size={18} />, label: 'Home', onClick: () => router.push('/#home') },
     { icon: <Info size={18} />, label: 'About', onClick: () => router.push('/#about') },
-    { icon: <Briefcase size={18} />, label: 'Projects', onClick: () => router.push('/projects') },
-    { icon: <Heart size={18} />, label: 'Donate', onClick: () => router.push('/donate') },
+    { icon: <Briefcase size={18} />, label: 'Projects', onClick: () => router.push('/#projects') },
+    { icon: <Heart size={18} />, label: 'Donate', onClick: () => router.push('/#donate') },
   ];
 
   return (

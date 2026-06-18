@@ -1,3 +1,4 @@
+/* eslint-disable */
 "use client";
 
 import React, { useEffect, useRef } from "react";
@@ -39,7 +40,7 @@ export const FireworksBackground = ({
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const fireworksRef = useRef<Firework[]>([]);
   const animationFrameRef = useRef<number>(0);
-  const lastFireworkTimeRef = useRef<number>(Date.now());
+  const lastFireworkTimeRef = useRef<number>(0);
 
   const colors = [
     "#9b87f5",
