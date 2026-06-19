@@ -27,6 +27,22 @@ export {
   projectsData,
 };
 
+function getYouTubeEmbedUrl(url: string) {
+  let videoId = '';
+  try {
+    if (url.includes('youtu.be/')) {
+      videoId = url.split('youtu.be/')[1].split('?')[0];
+    } else if (url.includes('youtube.com/watch')) {
+      videoId = new URL(url).searchParams.get('v') || '';
+    } else if (url.includes('youtube.com/embed/')) {
+      return url;
+    }
+  } catch (e) {
+    console.error('Invalid URL', e);
+  }
+  return videoId ? `https://www.youtube.com/embed/${videoId}` : url;
+}
+
 export const ProjectCard = ({
   project,
   setActiveVideo,
@@ -280,9 +296,9 @@ export function ProjectsGrid() {
                 <X size={20} className="text-neutral-200" />
               </button>
 
-              {activeVideo.includes("youtube") ? (
+              {activeVideo.includes("youtube") || activeVideo.includes("youtu.be") ? (
                 <iframe
-                  src={activeVideo}
+                  src={getYouTubeEmbedUrl(activeVideo)}
                   className="w-full aspect-video border-0"
                   allowFullScreen
                 ></iframe>
