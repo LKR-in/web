@@ -166,6 +166,44 @@ export const projectsData: Project[] = [
       github: "https://github.com/lavjeetrai",
     },
   },
+
+  {
+    slug: "Portfolio",
+    title: "Portfolio I ",
+    imageTitle: "Animated page for Portfolio",
+    src: "/protfolio1.png",
+    lightModeSrc: "/protfolio1.png",
+    video: "https://youtu.be/LJsFj0a1y4A?si=echtfbTMQXqsAbZU",
+    description: "A dynamic portfolio crafted with immersive animations, seamless user interactions, and responsive design to highlight my work, technical expertise, and creative journey.",
+    tech: ["react", "ts",  "tailwind"],
+    github: "https://github.com/lavjeetrai",
+    live: "https://hehe.lavjeetkumarrai.dpdns.org",
+    backgroundImage: "/project1-bg.jpg",
+    hasPin: false,
+    creator: {
+      name: "Lavjeet Kumar Rai",
+      github: "https://github.com/lavjeetrai",
+    },
+  },
+
+  {
+    slug: "Blog",
+    title: "Blog I ",
+    imageTitle: "Animated page for Blog",
+    src: "/blog1.png",
+    lightModeSrc: "/blog1.png",
+    video: "https://youtu.be/nFBof4ta42g?si=8BYad3rIq1fdpEC4",
+    description: "A dynamic Blog crafted with immersive animations, seamless user interactions, and responsive design to highlight my work, technical expertise, and creative journey.",
+    tech: ["react", "ts",  "tailwind"],
+    github: "https://github.com/lavjeetrai",
+    live: "https://hehe.lavjeetkumarrai.dpdns.org",
+    backgroundImage: "/project2-bg.jpg",
+    hasPin: false,
+    creator: {
+      name: "Lavjeet Kumar Rai",
+      github: "https://github.com/lavjeetrai",
+    },
+  },
 ];
 
 export const originalCreator = {
