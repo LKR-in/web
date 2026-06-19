@@ -154,7 +154,7 @@ export const projectsData: Project[] = [
     imageTitle: "Encrypted QR Interface",
     src: "/securescan.png",
     lightModeSrc: "/securescan.png",
-    video: "",
+    video: "https://youtu.be/u3jwyINCgDQ",
     description: "A privacy-focused web application that generates encrypted QR codes from text inputs, optimized specifically for a 200-word capacity limit to ensure maximum processing efficiency.",
     tech: ["react", "ts",  "tailwind"],
     github: "https://github.com/lavjeetrai",
